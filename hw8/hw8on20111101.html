@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  
+  <script type="text/javascript">
+          var req;
+		 
+
+          function loadServlets(url) {
+	          req = false;
+  
+             if(window.XMLHttpRequest) {
+    	         try {
+			        req = new XMLHttpRequest();
+	
+                 } catch(e) {
+			        req = false;
+                 }
+    
+             } else if(window.ActiveXObject) {
+       	         try {
+        	        req = new ActiveXObject("Msxml2.XMLHTTP");
+      	         } catch(e) {
+        	     try {
+          		    req = new ActiveXObject("Microsoft.XMLHTTP");
+        	     } catch(e) {
+          		    req = false;
+        	     }
+		        }
+              }
+			  
+	          if(req) {
+                 
+		          req.onreadystatechange = myCallback;
+				  req.open("GET", url, true);
+				
+         
+       		
+				 req.send(null); 
+	          }
+            }
+
+			function checkRequirement(myForm)
+			{
+				var checkZipCode=/[0-9]{5}/;
+		
+				if (!checkZipCode.test(myForm.zipCode.value)) 
+				{
+						window.alert('Zip Code should be 5 digits');
+						myForm.zipCode.focus();
+						return false;
+				}
+			    loadServlets("http://cs-server.usc.edu:26179/examples/servlet/ajax_movie?zipCode="+myForm.zipCode.value);	
+			    return true;
+			}
+
+		 function myCallback() {
+		
+    
+          if (req.readyState == 4 && req.status == 200) {
+			
+      
+			     var movieTable = "<table border='2' align='center'><tr><th>Cover</th><th>Title</th><th>Movie Duration</th><th>Showtime</th><th>Tweet</th></tr>";
+		         var doc = eval('(' +req.responseText+ ')');
+
+		       
+          
+		         for(i=0 ; i <= doc.movies.movie.length-1 ; i++ )
+		         {
+		             movieTable += "<tr><td align= 'center'><img src='" + doc.movies.movie[i].cover + "'></img></td><td align='center'>" +doc.movies.movie[i].title+ "</td><td align='center'>" +doc.movies.movie[i].duration+ "</td><td align='center'>" +doc.movies.movie[i].showtime+ "</td><td align='center'><iframe allowtransparency='true' frameborder='0' scrolling='no'  src='//platform.twitter.com/widgets/tweet_button.html?count=vertical&text=I%20am%20planning%20to%20watch%20%23"+escape(doc.movies.movie[i].title)+"%20@%20"+escape(doc.movies.movie[i].theatre)+"...&url="+doc.movies.movie[i].url+"' style='width:55px; height:62px;'></iframe></td></tr>";
+	
+		          }
+
+				  movieTable += "</table>";
+		   
+		          document.getElementById("movieDis").innerHTML=movieTable;
+           
+            }				       
+          }
+   </Script>
+ </head>
+ <body>
+  <form name="myForm" method="GET">
+   <h1 align="center">Tweet your Movie!!</h1>
+   <p align="center">Please enter then ZIP Code To Find Movies Screening Near You</p>
+   <center><input type="text" name="zipCode"  id="zipCode" maxlength="5" size="20"/>
+   <input type="button" value="Search" onClick="javascript:return checkRequirement(myForm)" /> 
+   </center>
+   <p>
+   <center><div id="movieDis"></div></center></p>
+ </form>
+ <noscript>
+ </body>
+</html>

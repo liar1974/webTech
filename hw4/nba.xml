@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sports-content>
+  <team>
+    <Name>Boston Celtics</Name>
+    <Color>Green</Color>
+    
+	 
+	 
+	 
+	 
+	 
+	                                      <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Boston_Celtics.png</Logo>
+    <Championships>17</Championships>
+    <Captain>
+
+      <Name>Paul Pierce</Name>
+      <Position>Small forward</Position>
+                          <Games>964</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Paul_Pierce.jpg</Image>
+    </Captain>
+    <Coach>Doc Rivers</Coach>
+    <Arena>TD Garden</Arena>
+    <Video>http://www.youtube.com/embed/23pZW_eBOVI</Video>
+  </team>
+  <team>
+    <Name>Philadelphia 76ers</Name>
+                                                          <Color>Red</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Philadelphia76ers.PNG</Logo>
+    <Championships>3</Championships>
+    <Captain>
+      <Name>Andre Iguodala</Name>
+      <Position>Shooting Guard</Position>
+      <Games>553</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Andre_Iguodala.jpg</Image>
+    </Captain>
+    <Coach>Doug Collins</Coach>
+    <Arena>Wells Fargo Center</Arena>
+    <Video>http://www.youtube.com/embed/seYOFAjKJCw</Video>
+  </team>
+  <team>
+    <Name>New York Knicks</Name>
+    <Color>Blue</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/NewYorkKnicks.PNG</Logo>
+    <Championships>2</Championships>
+    <Captain>
+      <Name>Amar'e Stoudemire</Name>
+      <Position>Power forward</Position>
+      <Games>594</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Amar'e.jpg</Image>
+    </Captain>
+    <Coach>Mike D'Antoni</Coach>
+    <Arena>Madison Square Garden</Arena>
+    <Video>http://www.youtube.com/embed/ckF0LgqdClc</Video>
+  </team>
+  <team>
+    <Name>Los Angeles Lakers</Name>
+    <Color>Yellow</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/LA_Lakers.png</Logo>
+    <Championships>17</Championships>
+    <Captain>
+      <Name>Kobe Bryant</Name>
+      <Position>Shooting Guard</Position>
+      <Games>1103</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Kobe_Bryant.jpg</Image>
+    </Captain>
+    <Coach>Mike Brown</Coach>
+    <Arena>Staples Center</Arena>
+    <Video>http://www.youtube.com/embed/TpYhE4j1WM4</Video>
+  </team>
+  <team>
+    <Name>Detroit Pistons</Name>
+    <Color>Royal Blue</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Detroit_Pistons.png</Logo>
+    <Championships>5</Championships>
+    <Captain>
+      <Name>Richard Hamilton</Name>
+      <Position>Shooting Guard</Position>
+      <Games>843</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Hamilton.jpg</Image>
+    </Captain>
+    <Coach>Lawrence Frank</Coach>
+    <Arena>The Palace of Auburn Hills</Arena>
+    <Video>http://www.youtube.com/embed/FNKwEOUm_3I</Video>
+  </team>
+  <team>
+    <Name>Chicago Bulls</Name>
+    <Color>Red</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Chicago_Bulls.png</Logo>
+    <Championships>6</Championships>
+    <Captain>
+      <Name>Carlos Boozer</Name>
+      <Position>Power forward</Position>
+      <Games>569</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Carlos_Boozer.jpg</Image>
+    </Captain>
+    <Coach>Tom Thibodeau</Coach>
+    <Arena>United Center</Arena>
+    <Video>http://www.youtube.com/embed/uV_Sga7ODOs</Video>
+  </team>
+  <team>
+    <Name>Dallas Mavericks</Name>
+    <Color>Light Royal Blue</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Dallas_Mavericks.png</Logo>
+    <Championships>1</Championships>
+    <Captain>
+      <Name>Jason Kidd</Name>
+      <Position>Guard</Position>
+      <Games>1267</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Jason_Kidd.jpg</Image>
+    </Captain>
+    <Coach>Donnie Nelson</Coach>
+    <Arena>American Airlines Center</Arena>
+    <Video>http://www.youtube.com/embed/0brgTf8Kri8</Video>
+  </team>
+  <team>
+    <Name>Atlanta Hawks</Name>
+    <Color>Navy</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Atlanta_Hawks.png</Logo>
+    <Championships>1</Championships>
+    <Captain>
+      <Name>Josh Smith</Name>
+      <Position>Forward</Position>
+      <Games>534</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Josh_Smith.jpg</Image>
+    </Captain>
+    <Coach>Larry Drew</Coach>
+    <Arena>Philips Arena</Arena>
+    <Video>http://www.youtube.com/embed/RUH8xQlD3e0</Video>
+  </team>
+  <team>
+    <Name>Washington Wizards</Name>
+    <Color>Red</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/WashingtonWizards.PNG</Logo>
+    <Championships>1</Championships>
+    <Captain>
+      <Name>John Wall</Name>
+      <Position>Point Guard</Position>
+      <Games>120</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Wall.jpg</Image>
+    </Captain>
+    <Coach>Flip Saunders</Coach>
+    <Arena>Verizon Center</Arena>
+    <Video>http://www.youtube.com/embed/zeXl7I5iCKY</Video>
+  </team>
+  <team>
+    <Name>Indiana Pacers</Name>
+    <Color>Silver</Color>
+    <Logo>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Indiana_Pacers.png</Logo>
+    <Championships>3</Championships>
+    <Captain>
+      <Name>Danny Granger</Name>
+      <Position>Forward</Position>
+      <Games>448</Games>
+      <Image>http://www-scf.usc.edu/~csci571/2011Fall/hw4/Danny_Granger.jpg</Image>
+    </Captain>
+    <Coach>Frank Vogel</Coach>
+    <Arena>Conseco Fieldhouse</Arena>
+    <Video>http://www.youtube.com/embed/zwKDsLU3weQ</Video>
+  </team>
+</sports-content>

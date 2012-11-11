@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="invalid_files/intl.css" type="text/css"?>
+<parsererror xmlns="http://www.mozilla.org/newlayout/xml/parsererror.xml">XML解析错误：不符合的记号.预期：&lt;/catalog&gt;。 
+位置：http://www-scf.usc.edu/~csci571/2011Fall/hw4/invalid.xml 
+行：22，列：8：<sourcetext>     &lt;/plant&gt;
+-------^</sourcetext></parsererror>

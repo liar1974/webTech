@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Register </title>
+  <script type="text/javascript">
+			function checkRequirement(myForm)
+			{
+				var checkZipCode=/[0-9]{5}/;
+				if (!checkZipCode.test(myForm.zipCode.value)) 
+				{
+						window.alert('Zip Code should be 5 digits');
+						myForm.zipCode.focus();
+						return false;
+				}
+				if (myForm.firstName.value == '') 
+				{
+						window.alert('Please fill your first name');
+			            myForm.firstName.focus();
+						return false;
+				}
+				if (myForm.lastName.value == '') 
+				{
+						window.alert('Please fill your last name');
+			            myForm.lastName.focus();
+						return false;
+				}
+				if (myForm.address.value == '') 
+				{
+						window.alert('Please fill your address');
+			            myForm.address.focus();
+						return false;
+				}
+				if (myForm.city.value == '') 
+				{
+						window.alert('Please fill your city');
+			            myForm.city.focus();
+						return false;
+				}
+				if (myForm.state.value == '') 
+				{
+						window.alert('Please fill your state');
+			            myForm.state.focus();
+						return false;
+				}
+				if (myForm.loginName.value == '') 
+				{
+						window.alert('Please fill your login Name');
+			            myForm.loginName.focus();
+						return false;
+				}
+				if (myForm.password.value == '') 
+				{
+						window.alert('Please fill your password');
+			            myForm.password.focus();
+						return false;
+				}
+				if (myForm.confirmPassword.value == '') 
+				{
+						window.alert('Please fill your confirm password');
+			            myForm.confirmPassword.focus();
+						return false;
+				}
+				if (myForm.password.value != myForm.confirmPassword.value) 
+				{
+						window.alert('Please check whether your password and your confirm password is identical or not');
+			  
+						return false;
+				}
+			    return true;
+			}
+   </Script>
+ </head>
+ <body>
+  <form name="myForm" action="getInfo.php" method="post" >
+   <h1 align="center">Establish Your Account</h1>
+   <hr>
+   <br>
+   First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="firstName" maxlength="255" size="50"/>
+   <br><br>
+   Middle Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="middleName" maxlength="255" size="50"/>
+   <br><br>
+   Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastName" maxlength="255" size="50"/>
+   <br><br>
+   Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="address"  maxlength="255" size="50"/>
+   <br><br>
+   City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="city"  maxlength="255" size="50"/>
+   <br><br>
+   State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <select name="state">
+     <option value="">Select</option>
+     <option value="AK">AK</option>
+     <option value="AL">AL</option>
+     <option value="AR">AR</option>
+     <option value="AZ">AZ</option>
+     <option value="CA">CA</option>
+     <option value="CO">CO</option>
+     <option value="CT">CT</option>
+     <option value="DC">DC</option>
+     <option value="DE">DE</option>
+     <option value="FL">FL</option>
+     <option value="GA">GA</option>
+     <option value="HI">HI</option>
+     <option value="IA">IA</option>
+     <option value="ID">ID</option>
+     <option value="IL">IL</option>
+     <option value="IN">IN</option>
+     <option value="KS">KS</option>
+     <option value="KY">KY</option>
+     <option value="LA">LA</option>
+     <option value="MA">MA</option>
+     <option value="MD">MD</option>
+     <option value="ME">ME</option>
+     <option value="MI">MI</option>
+     <option value="MN">MN</option>
+     <option value="MO">MO</option>
+     <option value="MS">MS</option>
+     <option value="MT">MT</option>
+     <option value="NC">NC</option>
+     <option value="ND">ND</option>
+     <option value="NE">NE</option>
+     <option value="NH">NH</option>
+     <option value="NJ">NJ</option>
+     <option value="NM">NM</option>
+     <option value="NV">NV</option>
+     <option value="NY">NY</option>
+     <option value="OH">OH</option>
+     <option value="OK">OK</option>
+     <option value="OR">OR</option>
+     <option value="PA">PA</option>
+     <option value="RI">RI</option>
+     <option value="SC">SC</option>
+     <option value="SD">SD</option>
+     <option value="TN">TN</option>
+     <option value="TX">TX</option>
+     <option value="UT">UT</option>
+     <option value="VA">VA</option>
+     <option value="VT">VT</option>
+     <option value="WA">WA</option>
+     <option value="WI">WI</option>
+     <option value="WV">WV</option>
+     <option value="WY">WY</option>
+  </select>
+  <br><br>
+  Zip Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="zipCode"  maxlength="255" size="50"/>
+  <br>
+  <hr>
+  <br>
+  Login Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="loginName"  maxlength="255" size="50"/>
+  <br><br>
+  Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password"  maxlength="255" size="50"/>
+  <br><br>
+  Confirm Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="confirmPassword"  maxlength="255" size="50"/>
+  <br>
+  <br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="submit" value="SubmitYourAccountInformation" onClick="javaScript:return checkRequirement(myForm)" /> 
+ </form>
+ </body>
+</html>
